@@ -1,44 +1,11 @@
-# Dash Wind Streaming
+"README" 
 
-## About this app
+En este repositorio se encuentra todo el código desarrollado en el Trabajo. 
+En la carpeta Notebook están los archivos de procesado de datos, En la carpeta data se encuentran los resultados generados y por último están las tres vistas generadas con toda su lógica, main.py, app.py, map_app.py
 
-This app queries a SQL database every second and uses the data to update the wind speed diagram and the wind direction diagram. 
-The wind speed values are then binned in real time to generate the wind histogram plot.
-
-Original repo: [plotly/dash-wind-streaming](https://github.com/plotly/dash-wind-streaming)
-
-
-## How to run this app
-
-(The following instructions apply to Posix/bash. Windows users should check
-[here](https://docs.python.org/3/library/venv.html).)
-
-First, clone this repository and open a terminal inside the root folder.
-
-Create and activate a new virtual environment (recommended) by running
-the following:
-
-```bash
-python3 -m venv myvenv
-source myvenv/bin/activate
-```
-
-Install the requirements:
-
-```bash
-pip install -r requirements.txt
-```
-Run the app:
+Run the app (example):
 
 ```bash
 python app.py
 ```
 Open a browser at http://127.0.0.1:8050
-
-## Screenshots
-
-![demo.gif](demo.gif)
-
-## Resources
-
-- To learn more about Dash, check out our [documentation](https://plot.ly/dash).
