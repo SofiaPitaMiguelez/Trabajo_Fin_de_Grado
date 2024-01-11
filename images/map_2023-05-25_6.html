@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2f99580941ed426d0519ec9732852898 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2f99580941ed426d0519ec9732852898" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2f99580941ed426d0519ec9732852898 = L.map(
+                "map_2f99580941ed426d0519ec9732852898",
+                {
+                    center: [36.831665, -2.478708],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9e6fbb83935f7a85a779a3efafab3fb4 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_9e6fbb83935f7a85a779a3efafab3fb4.addTo(map_2f99580941ed426d0519ec9732852898);
+    
+            var circle_marker_11fbff4392703e3e56f05bcdcd9e78dc = L.circleMarker(
+                [36.831665, -2.478708],
+                {"bubblingMouseEvents": true, "color": "#32A15E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#32A15E", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_2f99580941ed426d0519ec9732852898);
+        
+    
+        var popup_a6ef5e2b3939632a4e5847f7dd8a452c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89ec6088bd7a365a37bc64c0951a0f72 = $(`<div id="html_89ec6088bd7a365a37bc64c0951a0f72" style="width: 100.0%; height: 100.0%;">K-A3 APTICA 1</div>`)[0];
+                popup_a6ef5e2b3939632a4e5847f7dd8a452c.setContent(html_89ec6088bd7a365a37bc64c0951a0f72);
+            
+        
+
+        circle_marker_11fbff4392703e3e56f05bcdcd9e78dc.bindPopup(popup_a6ef5e2b3939632a4e5847f7dd8a452c)
+        ;
+
+        
+    
+    
+            var circle_marker_5493889dfe3e12ff56cc8a5d2a4aed0f = L.circleMarker(
+                [36.836273, -2.480307],
+                {"bubblingMouseEvents": true, "color": "#32A15E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#32A15E", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_2f99580941ed426d0519ec9732852898);
+        
+    
+        var popup_c5114340aa0b41c636fbf48392d3a93e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1cfbec7e2bf9c45c30ddad5077dccc5c = $(`<div id="html_1cfbec7e2bf9c45c30ddad5077dccc5c" style="width: 100.0%; height: 100.0%;">K-A3 APTICA 2</div>`)[0];
+                popup_c5114340aa0b41c636fbf48392d3a93e.setContent(html_1cfbec7e2bf9c45c30ddad5077dccc5c);
+            
+        
+
+        circle_marker_5493889dfe3e12ff56cc8a5d2a4aed0f.bindPopup(popup_c5114340aa0b41c636fbf48392d3a93e)
+        ;
+
+        
+    
+    
+            var circle_marker_321abd93b09770e7686062e3a412e4e6 = L.circleMarker(
+                [36.832455, -2.479503],
+                {"bubblingMouseEvents": true, "color": "#32A15E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#32A15E", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_2f99580941ed426d0519ec9732852898);
+        
+    
+        var popup_03105df2171a639f17315d776fa078ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32de373b71cf9115a4031bd283c6d2e0 = $(`<div id="html_32de373b71cf9115a4031bd283c6d2e0" style="width: 100.0%; height: 100.0%;">K-A3 APTICA 3</div>`)[0];
+                popup_03105df2171a639f17315d776fa078ad.setContent(html_32de373b71cf9115a4031bd283c6d2e0);
+            
+        
+
+        circle_marker_321abd93b09770e7686062e3a412e4e6.bindPopup(popup_03105df2171a639f17315d776fa078ad)
+        ;
+
+        
+    
+    
+            var circle_marker_c3e4693bd12c1dcf50a3c6eea6150d14 = L.circleMarker(
+                [36.83705, -2.477395],
+                {"bubblingMouseEvents": true, "color": "#32A15E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#32A15E", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_2f99580941ed426d0519ec9732852898);
+        
+    
+        var popup_bd7e7c6050dd987ee5dd2739d079ea29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_009c33ea1b3235b7dbecac9699b8290b = $(`<div id="html_009c33ea1b3235b7dbecac9699b8290b" style="width: 100.0%; height: 100.0%;">K-A3 APTICA 4</div>`)[0];
+                popup_bd7e7c6050dd987ee5dd2739d079ea29.setContent(html_009c33ea1b3235b7dbecac9699b8290b);
+            
+        
+
+        circle_marker_c3e4693bd12c1dcf50a3c6eea6150d14.bindPopup(popup_bd7e7c6050dd987ee5dd2739d079ea29)
+        ;
+
+        
+    
+    
+            var circle_marker_e8ce168c14ae4e298ba1f68d8d21f36d = L.circleMarker(
+                [36.83602, -2.468772],
+                {"bubblingMouseEvents": true, "color": "#32A15E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#32A15E", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_2f99580941ed426d0519ec9732852898);
+        
+    
+        var popup_844ed113b4c802bf90ada3cb483debde = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67b2b27848a20c8bb90df349ac88490a = $(`<div id="html_67b2b27848a20c8bb90df349ac88490a" style="width: 100.0%; height: 100.0%;">K-A3 APTICA 5</div>`)[0];
+                popup_844ed113b4c802bf90ada3cb483debde.setContent(html_67b2b27848a20c8bb90df349ac88490a);
+            
+        
+
+        circle_marker_e8ce168c14ae4e298ba1f68d8d21f36d.bindPopup(popup_844ed113b4c802bf90ada3cb483debde)
+        ;
+
+        
+    
+    
+            var circle_marker_9e15080c04d7efb0fc60bb0ec7771111 = L.circleMarker(
+                [36.837284, -2.472765],
+                {"bubblingMouseEvents": true, "color": "#32A15E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#32A15E", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_2f99580941ed426d0519ec9732852898);
+        
+    
+        var popup_29bd3596dada8dbbd1f1e7298eb34373 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4ec928d3cb75af5014633a89c7960e3 = $(`<div id="html_b4ec928d3cb75af5014633a89c7960e3" style="width: 100.0%; height: 100.0%;">K-A3 APTICA 6</div>`)[0];
+                popup_29bd3596dada8dbbd1f1e7298eb34373.setContent(html_b4ec928d3cb75af5014633a89c7960e3);
+            
+        
+
+        circle_marker_9e15080c04d7efb0fc60bb0ec7771111.bindPopup(popup_29bd3596dada8dbbd1f1e7298eb34373)
+        ;
+
+        
+    
+    
+            var circle_marker_43de512762f8ea265593888cdc7dd329 = L.circleMarker(
+                [36.834484, -2.465709],
+                {"bubblingMouseEvents": true, "color": "#32A15E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#32A15E", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_2f99580941ed426d0519ec9732852898);
+        
+    
+        var popup_b0c5b94ba79a55a56fcc7d45a9bfd8af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24797bcb56861edcb4f8dcf2d84ceaef = $(`<div id="html_24797bcb56861edcb4f8dcf2d84ceaef" style="width: 100.0%; height: 100.0%;">K-A3 APTICA 7</div>`)[0];
+                popup_b0c5b94ba79a55a56fcc7d45a9bfd8af.setContent(html_24797bcb56861edcb4f8dcf2d84ceaef);
+            
+        
+
+        circle_marker_43de512762f8ea265593888cdc7dd329.bindPopup(popup_b0c5b94ba79a55a56fcc7d45a9bfd8af)
+        ;
+
+        
+    
+</script>
+</html>
