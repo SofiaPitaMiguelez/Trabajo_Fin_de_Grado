@@ -20,23 +20,18 @@ import json
 import dash_leaflet as dl
 from dash.exceptions import PreventUpdate
 
-# Add the imports for mapping components
-#CUIDADO IGUAL NECESITAMOS ESTO
-#from dash_extensions.javascript import assign
-
-#from dash_extensions.javascript import 
-#import dash_html_components as html
 import dash_leaflet.express as dlx
 import dash_leaflet as dl
 
 
 GRAPH_INTERVAL = os.environ.get("GRAPH_INTERVAL", 5000)
+from app_instance import app_instance as app
 
 #app inicialization
-app = dash.Dash(
-    __name__,
-    suppress_callback_exceptions=True 
-)
+# app = dash.Dash(
+#     __name__,
+#     suppress_callback_exceptions=True 
+# )
 app.title = "Visualización del ICA en el Puerto de Almería"
 app_color = {"graph_bg": "#082255", "graph_line": "#007ACE"}
 
@@ -239,10 +234,11 @@ def create_and_show_plot(data, selected_device, selected_month):
     return fig
 
 #definition of the layout
-app.layout = html.Div(
+app_layout = html.Div(
+    #app.layout = html.Div(
 
     [
-        dcc.Location(id='url', refresh=False),
+        #dcc.Location(id='url', refresh=False),
         dcc.Link(html.Button("Volver"), href="/main"),
 
         
@@ -487,5 +483,7 @@ def update_graph(selected_month, selected_device):
     inca_fig = generate_inca_graph(selected_month, selected_device)
     return device_fig, inca_fig
 
+
+# app_instance = app
 if __name__ == "__main__":
     app.run_server(debug=True)

@@ -13,6 +13,7 @@ from folium.vector_layers import Circle
 #to be able to load the map correctly when navigating from main.py
 from dash.dependencies import State 
 import os
+from map_app_instance import map_app_instance as map_app
 
 # Load and process data for all months
 def load_and_process_data_all():
@@ -101,7 +102,9 @@ map_app = dash.Dash(__name__, suppress_callback_exceptions=True)
 # Add the hidden div for storing the start_date
 hidden_start_date = dcc.Store(id='hidden-start-date', data=None)
 
+
 # Update the layout to use the new hour_slider_marks and entire date range of the data
+
 map_app.layout = html.Div([
 #map_app.layout = html.Div([
     dcc.Interval(
@@ -478,6 +481,6 @@ def update_map_on_page_load(n_intervals, start_date, end_date, map_type, n_click
 server = map_app.server  # in case you run with Gunicorn
 
 
-# Run the app
+# # Run the app
 if __name__ == '__main__':
     map_app.run_server(debug=True)
